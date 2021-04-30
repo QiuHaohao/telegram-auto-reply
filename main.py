@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# A simple script to print some messages.
 import time
 import re
 import json
