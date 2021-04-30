@@ -39,7 +39,7 @@ async def handle_new_message(event):
       idList.append(to_user.id)
 
       if idList.count(to_user.id) <= 1:
-        await event.reply(tmpl.substitute(handle=f"@{from_user.username}"))
+        await event.reply(tmpl.substitute(from_handle=f"@{from_user.username}"))
 
 client.start()
 client.run_until_disconnected()
